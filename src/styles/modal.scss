@@ -1,0 +1,76 @@
+$font-stack: 'Poppins', Helvetica;
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+.modal {
+    z-index: 1000;
+    font-family: $font-stack;
+    background-color: #19242b;
+    width: 520px;
+    min-height: 300px;
+    position: fixed;
+    padding: 1.8em 1.6em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+
+    .modal-header {
+        @include flex(row);
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+
+        h2 {
+            color: #9bcff5;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: .4px;
+            line-height: 1.2;
+        }
+    }
+
+    button {
+        border: transparent;
+        outline: transparent;
+        background-color: transparent;
+        align-self: flex-start;
+        
+        .close-btn {
+            font-size: 2em;
+            cursor: pointer;
+            position: relative;
+            transform: translateX(-100%);
+            left: 100%;
+            color: rgb(238, 238, 238);
+        }
+    }
+
+    .modal-content {
+        margin: 1.6em 0;
+        padding-right: 1.3em;
+        color: #c4d4df;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;   
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+    }
+
+}
