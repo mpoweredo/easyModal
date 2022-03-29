@@ -1,7 +1,7 @@
 .modal {
   z-index: 1000;
   font-family: "Poppins", Helvetica;
-  background-color: #19242b;
+  background: #19242b;
   width: 520px;
   min-height: 300px;
   position: fixed;
@@ -68,7 +68,7 @@
   line-height: 1.5;
 }
 
-.modal::after {
+.modal-overlay {
   content: '';
   position: absolute;
   width: 100vw;
@@ -78,6 +78,6 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 2;
+  z-index: -2;
 }
 /*# sourceMappingURL=modal.css.map */
