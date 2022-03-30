@@ -4,6 +4,7 @@ const DEFAULT_OPTIONS = {
 	description: "Description/main content",
 	modal: "modal",
 	closeBtn: true,
+	operationButton: [true, 'nothing'],
 };
 
 export class EasyModal {
@@ -54,6 +55,14 @@ export class EasyModal {
             `;
 
 		this.#modalElement.innerHTML += modalContent;
+	}
+
+	set operationButton(value) {
+		if (!value[0]) {
+			return
+		}
+		const operationButton = 
+		console.log(value[1])
 	}
 
 	remove() {

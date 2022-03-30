@@ -1,5 +1,12 @@
 $font-stack: 'Poppins', Helvetica;
 
+$modal-background-dark: #19242b;
+$modal-title-color-dark: #9bcff5;
+$modal-content-color-dark: #c4d4df;
+$modal-button-color-dark: #9bcff5;
+$modal-button-color-hover-dark: #8db6d3;
+$modal-button-color-text: #22303A;
+
 @mixin flex($direction) {
     display: flex;
     flex-direction: $direction;
@@ -8,7 +15,7 @@ $font-stack: 'Poppins', Helvetica;
 .modal {
     z-index: 1000;
     font-family: $font-stack;
-    background: #19242b;
+    background: $modal-background-dark;
     width: 520px;
     min-height: 300px;
     position: fixed;
@@ -25,7 +32,7 @@ $font-stack: 'Poppins', Helvetica;
         height: auto;
 
         h2 {
-            color: #9bcff5;
+            color: $modal-title-color-dark;
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: .4px;
@@ -52,7 +59,7 @@ $font-stack: 'Poppins', Helvetica;
     .modal-content {
         margin: 1.6em 0;
         padding-right: 1.3em;
-        color: #c4d4df;
+        color: $modal-content-color-dark;
     }
 
     p {
@@ -60,6 +67,12 @@ $font-stack: 'Poppins', Helvetica;
         font-weight: 400;
         line-height: 1.5;   
     }
+
+    .operation-buttons {
+        @include flex(row);
+        gap: .8em;
+    }
+
 
 }
 
@@ -74,3 +87,17 @@ $font-stack: 'Poppins', Helvetica;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: -2;
 }
+
+#operation-button {
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: $modal-button-color-dark;
+    color: $modal-button-color-text;
+    cursor: pointer;
+    padding: 0.8em 1.2em;
+    &:hover {
+        background-color: $modal-button-color-hover-dark;
+    }
+}
+

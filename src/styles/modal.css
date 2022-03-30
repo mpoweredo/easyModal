@@ -68,6 +68,17 @@
   line-height: 1.5;
 }
 
+.modal .operation-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: .8em;
+}
+
 .modal-overlay {
   content: '';
   position: absolute;
@@ -79,5 +90,19 @@
           transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.3);
   z-index: -2;
+}
+
+#operation-button {
+  border-radius: 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #9bcff5;
+  color: #22303A;
+  cursor: pointer;
+  padding: 0.8em 1.2em;
+}
+
+#operation-button:hover {
+  background-color: #8db6d3;
 }
 /*# sourceMappingURL=modal.css.map */
