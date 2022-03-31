@@ -1,11 +1,37 @@
 $font-stack: 'Poppins', Helvetica;
 
+
+// DARK THEME
+
 $modal-background-dark: #19242b;
 $modal-title-color-dark: #9bcff5;
 $modal-content-color-dark: #c4d4df;
-$modal-button-color-dark: #9bcff5;
-$modal-button-color-hover-dark: #8db6d3;
-$modal-button-color-text: #22303A;
+
+// buttons 
+
+$modal-operation-button-one-color-text-dark: #22303A;
+$modal-operation-button-one-dark: #9bcff5 ;
+$modal-operation-button-one-dark-hover: #95bfdd;
+$modal-operation-button-two-color-text-dark: #f1fff3;
+$modal-operation-button-two-dark: #6cca79;
+$modal-operation-button-two-dark-hover: #5ebb6b;
+
+
+// LIGHT MODE
+
+$modal-background-light: #446074;
+$modal-title-color-light: #a3d3f5;
+$modal-content-color-light: #ecf5fc;
+
+// buttons 
+
+$modal-operation-button-one-color-text-light: #6da6cc;
+$modal-operation-button-one-light: #2A3C48 ;
+$modal-operation-button-one-light-hover: #283946;
+$modal-operation-button-two-color-text-light: #f8fff9;
+$modal-operation-button-two-light: #7de08a;
+$modal-operation-button-two-light-hover: #7bd487;
+
 
 @mixin flex($direction) {
     display: flex;
@@ -13,9 +39,8 @@ $modal-button-color-text: #22303A;
 }
 
 .modal {
-    z-index: 1000;
+    z-index: 100;
     font-family: $font-stack;
-    background: $modal-background-dark;
     width: 520px;
     min-height: 300px;
     position: fixed;
@@ -32,7 +57,6 @@ $modal-button-color-text: #22303A;
         height: auto;
 
         h2 {
-            color: $modal-title-color-dark;
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: .4px;
@@ -59,7 +83,6 @@ $modal-button-color-text: #22303A;
     .modal-content {
         margin: 1.6em 0;
         padding-right: 1.3em;
-        color: $modal-content-color-dark;
     }
 
     p {
@@ -92,12 +115,67 @@ $modal-button-color-text: #22303A;
     border-radius: 2px;
     font-size: 1rem;
     font-weight: 700;
-    background-color: $modal-button-color-dark;
-    color: $modal-button-color-text;
     cursor: pointer;
     padding: 0.8em 1.2em;
-    &:hover {
-        background-color: $modal-button-color-hover-dark;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.dark-mode {
+    .modal {
+        background-color: $modal-background-dark;
+        h2 {
+            color: $modal-title-color-dark;
+        }
+    }
+    .modal-content {
+        color: $modal-content-color-dark;
+    }
+
+    #operation-button {
+        &:nth-child(1) {
+            color: $modal-operation-button-one-color-text-dark;
+            background-color: $modal-operation-button-one-dark;
+            &:hover {
+                background-color: $modal-operation-button-one-dark-hover;
+            }
+        }
+        &:nth-child(2) {
+            color: $modal-operation-button-two-color-text-dark;
+            background-color: $modal-operation-button-two-dark;
+            &:hover {
+                background-color: $modal-operation-button-two-dark-hover;
+            }
+        }
+    }
+}
+
+
+.light-mode {
+    .modal {
+        background-color: $modal-background-light;
+        h2 {
+            color: $modal-title-color-light;
+        }
+    }
+    .modal-content {
+        color: $modal-content-color-light;
+    }
+
+    #operation-button {
+        &:nth-child(1) {
+            color: $modal-operation-button-one-color-text-light;
+            background-color: $modal-operation-button-one-light;
+            &:hover {
+                background-color: $modal-operation-button-one-light-hover;
+            }
+        }
+        &:nth-child(2) {
+            color: $modal-operation-button-two-color-text-light;
+            background-color: $modal-operation-button-two-light;
+            &:hover {
+                background-color: $modal-operation-button-two-light-hover;
+            }
+        }
     }
 }
 

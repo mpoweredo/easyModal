@@ -1,8 +1,8 @@
 const DEFAULT_OPTIONS = {
-	title: "Title...",
-	theme: "light",
-	description: "Description/main content",
-	modal: "modal",
+	title: 'Title...',
+	theme: 'light',
+	description: 'Description/main content',
+	modal: 'modal',
 	closeBtn: true,
 	operationButton: [true, 'nothing'],
 };
@@ -12,16 +12,16 @@ export class EasyModal {
 	#removeBinded;
 
 	constructor(options) {
-        this.#removeBinded = this.remove.bind(this);
-		this.#modalElement = document.createElement("div");
-		this.#modalElement.classList.add("modal");
+		this.#removeBinded = this.remove.bind(this);
+		this.#modalElement = document.createElement('div');
+		this.#modalElement.classList.add('modal');
 		this.update({ ...DEFAULT_OPTIONS, ...options });
 
-        this.#modalElement.parentElement.addEventListener('click', (ev) => {
-            if (ev.target == document.querySelector('.modal-overlay')) {
-                this.remove()
-            }
-        })
+		this.#modalElement.parentElement.addEventListener('click', (ev) => {
+			if (ev.target == document.querySelector('.modal-overlay')) {
+				this.remove();
+			}
+		});
 	}
 
 	set modal(value) {
@@ -42,8 +42,8 @@ export class EasyModal {
 
 	set closeBtn(value) {
 		if (value) {
-			const closeBtn = document.querySelector("#close-modal-btn");
-			closeBtn.addEventListener("click", this.#removeBinded);
+			const closeBtn = document.querySelector('#close-modal-btn');
+			closeBtn.addEventListener('click', this.#removeBinded);
 		}
 	}
 
@@ -59,15 +59,14 @@ export class EasyModal {
 
 	set operationButton(value) {
 		if (!value[0]) {
-			return
+			return;
 		}
-		const operationButton = 
-		console.log(value[1])
+		// const operationButton = console.log(value[1]);
 	}
 
 	remove() {
 		const container = this.#modalElement.parentElement;
-        container.remove();
+		container.remove();
 	}
 
 	update(options) {
@@ -78,8 +77,8 @@ export class EasyModal {
 }
 
 const createModal = () => {
-	const container = document.createElement("div");
-	container.classList.add("modal-overlay");
+	const container = document.createElement('div');
+	container.classList.add('modal-overlay');
 	document.body.appendChild(container);
 	return container;
 };

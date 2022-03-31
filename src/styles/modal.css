@@ -1,7 +1,6 @@
 .modal {
-  z-index: 1000;
+  z-index: 100;
   font-family: "Poppins", Helvetica;
-  background: #19242b;
   width: 520px;
   min-height: 300px;
   position: fixed;
@@ -31,7 +30,6 @@
 }
 
 .modal .modal-header h2 {
-  color: #9bcff5;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: .4px;
@@ -59,7 +57,6 @@
 .modal .modal-content {
   margin: 1.6em 0;
   padding-right: 1.3em;
-  color: #c4d4df;
 }
 
 .modal p {
@@ -96,13 +93,69 @@
   border-radius: 2px;
   font-size: 1rem;
   font-weight: 700;
-  background-color: #9bcff5;
-  color: #22303A;
   cursor: pointer;
   padding: 0.8em 1.2em;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
-#operation-button:hover {
-  background-color: #8db6d3;
+.dark-mode .modal {
+  background-color: #19242b;
+}
+
+.dark-mode .modal h2 {
+  color: #9bcff5;
+}
+
+.dark-mode .modal-content {
+  color: #c4d4df;
+}
+
+.dark-mode #operation-button:nth-child(1) {
+  color: #22303A;
+  background-color: #9bcff5;
+}
+
+.dark-mode #operation-button:nth-child(1):hover {
+  background-color: #95bfdd;
+}
+
+.dark-mode #operation-button:nth-child(2) {
+  color: #f1fff3;
+  background-color: #6cca79;
+}
+
+.dark-mode #operation-button:nth-child(2):hover {
+  background-color: #5ebb6b;
+}
+
+.light-mode .modal {
+  background-color: #446074;
+}
+
+.light-mode .modal h2 {
+  color: #a3d3f5;
+}
+
+.light-mode .modal-content {
+  color: #ecf5fc;
+}
+
+.light-mode #operation-button:nth-child(1) {
+  color: #6da6cc;
+  background-color: #2A3C48;
+}
+
+.light-mode #operation-button:nth-child(1):hover {
+  background-color: #283946;
+}
+
+.light-mode #operation-button:nth-child(2) {
+  color: #f8fff9;
+  background-color: #7de08a;
+}
+
+.light-mode #operation-button:nth-child(2):hover {
+  background-color: #7bd487;
 }
 /*# sourceMappingURL=modal.css.map */

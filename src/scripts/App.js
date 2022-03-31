@@ -1,6 +1,6 @@
-import { EasyModal } from "./easyModal.js";
+import { EasyModal } from './easyModal.js';
 
 // new EasyModal({
-//     title: "yezz",
-//     description: "esssa"
-// })
+// 	title: 'yezz',
+// 	description: 'esssa'
+// });
