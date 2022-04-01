@@ -19,8 +19,8 @@ $modal-operation-button-two-dark-hover: #5ebb6b;
 
 // LIGHT MODE
 
-$modal-background-light: #446074;
-$modal-title-color-light: #a3d3f5;
+$modal-background-light: #5a8fb3;
+$modal-title-color-light: #82cbff;
 $modal-content-color-light: #ecf5fc;
 
 // buttons 
@@ -118,29 +118,34 @@ $modal-operation-button-two-light-hover: #7bd487;
     cursor: pointer;
     padding: 0.8em 1.2em;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    a {
+        text-decoration: none;
+    }
 }
 
 .dark-mode {
-    .modal {
         background-color: $modal-background-dark;
         h2 {
             color: $modal-title-color-dark;
         }
-    }
     .modal-content {
         color: $modal-content-color-dark;
     }
 
     #operation-button {
         &:nth-child(1) {
-            color: $modal-operation-button-one-color-text-dark;
+            a {
+                color: $modal-operation-button-one-color-text-dark;
+            }
             background-color: $modal-operation-button-one-dark;
             &:hover {
                 background-color: $modal-operation-button-one-dark-hover;
             }
         }
         &:nth-child(2) {
-            color: $modal-operation-button-two-color-text-dark;
+            a {
+                color: $modal-operation-button-two-color-text-dark;
+            }
             background-color: $modal-operation-button-two-dark;
             &:hover {
                 background-color: $modal-operation-button-two-dark-hover;
@@ -151,26 +156,28 @@ $modal-operation-button-two-light-hover: #7bd487;
 
 
 .light-mode {
-    .modal {
         background-color: $modal-background-light;
         h2 {
             color: $modal-title-color-light;
         }
-    }
     .modal-content {
         color: $modal-content-color-light;
     }
 
     #operation-button {
         &:nth-child(1) {
-            color: $modal-operation-button-one-color-text-light;
+            a {
+                color: $modal-operation-button-one-color-text-light;
+            }
             background-color: $modal-operation-button-one-light;
             &:hover {
                 background-color: $modal-operation-button-one-light-hover;
             }
         }
         &:nth-child(2) {
-            color: $modal-operation-button-two-color-text-light;
+            a {
+                color: $modal-operation-button-two-color-text-light;
+            }
             background-color: $modal-operation-button-two-light;
             &:hover {
                 background-color: $modal-operation-button-two-light-hover;

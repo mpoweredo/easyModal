@@ -1,10 +1,11 @@
 const DEFAULT_OPTIONS = {
 	title: 'Title...',
-	theme: 'light',
+	theme: 'dark',
 	description: 'Description/main content',
 	modal: 'modal',
 	closeBtn: true,
-	operationButton: [true, 'nothing'],
+	// operationButton: [[true, 'nothing'], [true, 'buy it']],
+	operationButton: [{content: 'buy it', href: 'amazon.pl'}]
 };
 
 export class EasyModal {
@@ -61,7 +62,21 @@ export class EasyModal {
 		if (!value[0]) {
 			return;
 		}
-		// const operationButton = console.log(value[1]);
+	
+		for (const button of value) {
+			console.log(button);
+
+			const operationButton = `
+			<div class="operation-buttons">
+			<button id="operation-button" class="operation-button"'><a href=${button.href}>${button.title}</a></button>
+			</div>
+			`;
+			this.#modalElement.innerHTML += operationButton;
+		}
+	}
+
+	set theme(value) {
+		this.#modalElement.classList.add(`${value}-mode`)
 	}
 
 	remove() {

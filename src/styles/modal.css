@@ -99,11 +99,15 @@
           box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
-.dark-mode .modal {
+#operation-button a {
+  text-decoration: none;
+}
+
+.dark-mode {
   background-color: #19242b;
 }
 
-.dark-mode .modal h2 {
+.dark-mode h2 {
   color: #9bcff5;
 }
 
@@ -112,8 +116,11 @@
 }
 
 .dark-mode #operation-button:nth-child(1) {
-  color: #22303A;
   background-color: #9bcff5;
+}
+
+.dark-mode #operation-button:nth-child(1) a {
+  color: #22303A;
 }
 
 .dark-mode #operation-button:nth-child(1):hover {
@@ -121,20 +128,23 @@
 }
 
 .dark-mode #operation-button:nth-child(2) {
-  color: #f1fff3;
   background-color: #6cca79;
+}
+
+.dark-mode #operation-button:nth-child(2) a {
+  color: #f1fff3;
 }
 
 .dark-mode #operation-button:nth-child(2):hover {
   background-color: #5ebb6b;
 }
 
-.light-mode .modal {
-  background-color: #446074;
+.light-mode {
+  background-color: #5a8fb3;
 }
 
-.light-mode .modal h2 {
-  color: #a3d3f5;
+.light-mode h2 {
+  color: #82cbff;
 }
 
 .light-mode .modal-content {
@@ -142,8 +152,11 @@
 }
 
 .light-mode #operation-button:nth-child(1) {
-  color: #6da6cc;
   background-color: #2A3C48;
+}
+
+.light-mode #operation-button:nth-child(1) a {
+  color: #6da6cc;
 }
 
 .light-mode #operation-button:nth-child(1):hover {
@@ -151,8 +164,11 @@
 }
 
 .light-mode #operation-button:nth-child(2) {
-  color: #f8fff9;
   background-color: #7de08a;
+}
+
+.light-mode #operation-button:nth-child(2) a {
+  color: #f8fff9;
 }
 
 .light-mode #operation-button:nth-child(2):hover {
