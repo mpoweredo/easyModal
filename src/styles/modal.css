@@ -2,7 +2,7 @@
   z-index: 100;
   font-family: "Poppins", Helvetica;
   width: 520px;
-  min-height: 300px;
+  min-height: 200px;
   position: fixed;
   padding: 1.8em 1.6em;
   top: 50%;
@@ -144,7 +144,7 @@
 }
 
 .light-mode h2 {
-  color: #82cbff;
+  color: #254f6d;
 }
 
 .light-mode .modal-content {

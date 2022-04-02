@@ -20,7 +20,7 @@ $modal-operation-button-two-dark-hover: #5ebb6b;
 // LIGHT MODE
 
 $modal-background-light: #5a8fb3;
-$modal-title-color-light: #82cbff;
+$modal-title-color-light: #254f6d;
 $modal-content-color-light: #ecf5fc;
 
 // buttons 
@@ -42,7 +42,7 @@ $modal-operation-button-two-light-hover: #7bd487;
     z-index: 100;
     font-family: $font-stack;
     width: 520px;
-    min-height: 300px;
+    min-height: 200px;
     position: fixed;
     padding: 1.8em 1.6em;
     top: 50%;
@@ -111,6 +111,7 @@ $modal-operation-button-two-light-hover: #7bd487;
     z-index: -2;
 }
 
+
 #operation-button {
     border-radius: 2px;
     font-size: 1rem;
@@ -133,6 +134,9 @@ $modal-operation-button-two-light-hover: #7bd487;
     }
 
     #operation-button {
+
+        // DARK MODE BUTTONS
+
         &:nth-child(1) {
             a {
                 color: $modal-operation-button-one-color-text-dark;
@@ -165,6 +169,9 @@ $modal-operation-button-two-light-hover: #7bd487;
     }
 
     #operation-button {
+
+        // LIGHTS MODE BUTTONS
+
         &:nth-child(1) {
             a {
                 color: $modal-operation-button-one-color-text-light;

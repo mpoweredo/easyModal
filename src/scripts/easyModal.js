@@ -4,8 +4,7 @@ const DEFAULT_OPTIONS = {
 	description: 'Description/main content',
 	modal: 'modal',
 	closeBtn: true,
-	// operationButton: [[true, 'nothing'], [true, 'buy it']],
-	operationButton: [{content: 'buy it', href: 'amazon.pl'}]
+	operationButton: [{content: 'buy it', href: 'https://www.amazon.pl/'}]
 };
 
 export class EasyModal {
@@ -62,16 +61,16 @@ export class EasyModal {
 		if (!value[0]) {
 			return;
 		}
-	
+		const buttonsContainer = document.createElement('div');
+		buttonsContainer.classList = "operation-buttons"
+		this.#modalElement.appendChild(buttonsContainer)
 		for (const button of value) {
 			console.log(button);
 
 			const operationButton = `
-			<div class="operation-buttons">
-			<button id="operation-button" class="operation-button"'><a href=${button.href}>${button.title}</a></button>
-			</div>
+			<button id="operation-button" class="operation-button"'><a href=${button.href}>${button.content}</a></button>
 			`;
-			this.#modalElement.innerHTML += operationButton;
+			buttonsContainer.innerHTML += operationButton;
 		}
 	}
 
