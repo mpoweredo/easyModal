@@ -1,8 +1,13 @@
+.disable-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .modal {
-  z-index: 100;
+  z-index: 1000;
   font-family: "Poppins", Helvetica;
   width: 520px;
-  min-height: 200px;
+  height: auto;
   position: fixed;
   padding: 1.8em 1.6em;
   top: 50%;
@@ -78,7 +83,7 @@
 
 .modal-overlay {
   content: '';
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 50%;
@@ -86,7 +91,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: -2;
+  z-index: 999;
 }
 
 #operation-button {

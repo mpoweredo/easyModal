@@ -8,4 +8,11 @@
 body {
   background-color: #11181d;
 }
+
+.box {
+  background-color: #03b803;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2em;
+}
 /*# sourceMappingURL=style.css.map */
