@@ -19,18 +19,18 @@ $modal-operation-button-two-dark-hover: #5ebb6b;
 
 // LIGHT MODE
 
-$modal-background-light: #5a8fb3;
-$modal-title-color-light: #254f6d;
-$modal-content-color-light: #ecf5fc;
+$modal-background-light: #42A5F5;
+$modal-title-color-light: #0f3766;
+$modal-content-color-light: #eef7ff;
 
 // buttons 
 
-$modal-operation-button-one-color-text-light: #6da6cc;
-$modal-operation-button-one-light: #2A3C48 ;
-$modal-operation-button-one-light-hover: #283946;
-$modal-operation-button-two-color-text-light: #f8fff9;
-$modal-operation-button-two-light: #7de08a;
-$modal-operation-button-two-light-hover: #7bd487;
+$modal-operation-button-one-color-text-light: #0d2f4b;
+$modal-operation-button-one-light: #d2ebff ;
+$modal-operation-button-one-light-hover: #549bd6;
+$modal-operation-button-two-color-text-light: #ffffff;
+$modal-operation-button-two-light: #8bdb96;
+$modal-operation-button-two-light-hover: #55be63;
 
 
 @mixin flex($direction) {

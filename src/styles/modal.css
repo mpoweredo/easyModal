@@ -145,38 +145,38 @@
 }
 
 .light-mode {
-  background-color: #5a8fb3;
+  background-color: #42A5F5;
 }
 
 .light-mode h2 {
-  color: #254f6d;
+  color: #0f3766;
 }
 
 .light-mode .modal-content {
-  color: #ecf5fc;
+  color: #eef7ff;
 }
 
 .light-mode #operation-button:nth-child(1) {
-  background-color: #2A3C48;
+  background-color: #d2ebff;
 }
 
 .light-mode #operation-button:nth-child(1) a {
-  color: #6da6cc;
+  color: #0d2f4b;
 }
 
 .light-mode #operation-button:nth-child(1):hover {
-  background-color: #283946;
+  background-color: #549bd6;
 }
 
 .light-mode #operation-button:nth-child(2) {
-  background-color: #7de08a;
+  background-color: #8bdb96;
 }
 
 .light-mode #operation-button:nth-child(2) a {
-  color: #f8fff9;
+  color: #ffffff;
 }
 
 .light-mode #operation-button:nth-child(2):hover {
-  background-color: #7bd487;
+  background-color: #55be63;
 }
 /*# sourceMappingURL=modal.css.map */
