@@ -4,9 +4,10 @@ new EasyModal({
 	title: "Kalifornia - USA",
 	description:
 		"Kalifornia to najwiekszy stan w USA, zamieszkuje go ponad 40 mln osob",
-	theme: "light",
+	theme: "dark",
 	operationButton: [
 		{ content: "Wykup lot", href: "airbnb.com" },
+		{ content: "Zaloguj sie", href: "jd.pl" }
 	],
 });
 

@@ -145,7 +145,11 @@
 }
 
 .light-mode {
-  background-color: #42A5F5;
+  background-color: #d6ebff;
+}
+
+.light-mode button .close-btn {
+  color: #061f3b;
 }
 
 .light-mode h2 {
@@ -153,11 +157,11 @@
 }
 
 .light-mode .modal-content {
-  color: #eef7ff;
+  color: #1e3f66;
 }
 
 .light-mode #operation-button:nth-child(1) {
-  background-color: #d2ebff;
+  background-color: #a9cdf8;
 }
 
 .light-mode #operation-button:nth-child(1) a {
@@ -165,11 +169,11 @@
 }
 
 .light-mode #operation-button:nth-child(1):hover {
-  background-color: #549bd6;
+  background-color: #94b4db;
 }
 
 .light-mode #operation-button:nth-child(2) {
-  background-color: #8bdb96;
+  background-color: #78da85;
 }
 
 .light-mode #operation-button:nth-child(2) a {
@@ -177,6 +181,6 @@
 }
 
 .light-mode #operation-button:nth-child(2):hover {
-  background-color: #55be63;
+  background-color: #6eca7a;
 }
 /*# sourceMappingURL=modal.css.map */
