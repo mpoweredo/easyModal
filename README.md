@@ -1,15 +1,15 @@
 # MODAL LIBRARY
 
-Modal Library jest to bilbioteka do JS, która bedzie ułatwiała tworzenie modalu.
-Za pomoca jednej linijki w naszym kodzie bedziemy w stanie stworzyć ładnie wygladajacy modal, w którym ustawiamy nasze style oraz funkcjonalnosc.
+Modal Library is a simple javascript library whose goal is making good looking modal using one line in javascript where you can set style and funcionality.
 
 
 ## Goals
 
-- Poszerzenie umiejetnosci w programowaniu obiektowym w JS
-- Poszerzenie wiedzy oraz umiejętnosci na temat Gita oraz npm
-- Stworzenie biblioteki, w celu ulatwienia pracy sobie oraz innym developerom
-- Poszerzenie umiejętności SCSS
+- Practice OOP Programing
+- Practice using git and npm
+- Practice SCSS
+- Practice working with tools like eslint etc
+- Create a library, which is supposed to simplify work for me and other developers
 
 ## Instalation
 
