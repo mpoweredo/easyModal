@@ -1,0 +1,26 @@
+{
+  "name": "easymodal",
+  "version": "1.0.0",
+  "description": "Modal Library jest to bilbioteka do JS, która bedzie ułatwiała tworzenie modalu.\r Za pomoca jednej linijki w naszym kodzie bedziemy w stanie stworzyć ładnie wygladajacy modal, w którym ustawiamy nasze style oraz funkcjonalnosc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpoweredo/easyModal.git"
+  },
+  "author": "mpoweredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpoweredo/PROJEKT-NA-INFORMATYKE/issues"
+  },
+  "homepage": "https://github.com/mpoweredo/PROJEKT-NA-INFORMATYKE#readme",
+  "devDependencies": {
+    "eslint": "^8.12.0"
+  },
+  "dependencies": {},
+  "keywords": [
+    "easyModal"
+  ]
+}

@@ -1,0 +1,211 @@
+$font-stack: 'Poppins', Helvetica;
+
+
+// DARK THEME
+
+$modal-background-dark: #19242b;
+$modal-title-color-dark: #9bcff5;
+$modal-content-color-dark: #c4d4df;
+
+// buttons 
+
+$modal-operation-button-one-color-text-dark: #22303A;
+$modal-operation-button-one-dark: #9bcff5 ;
+$modal-operation-button-one-dark-hover: #95bfdd;
+$modal-operation-button-two-color-text-dark: #f1fff3;
+$modal-operation-button-two-dark: #6cca79;
+$modal-operation-button-two-dark-hover: #5ebb6b;
+
+
+// LIGHT MODE
+
+$modal-background-light: #d6ebff;
+$modal-title-color-light: #0f3766;
+$modal-content-color-light: #1e3f66;
+
+// buttons 
+
+$modal-operation-button-one-color-text-light: #0d2f4b;
+$modal-operation-button-one-light: #a9cdf8 ;
+$modal-operation-button-one-light-hover: #94b4db;
+$modal-operation-button-two-color-text-light: #ffffff;
+$modal-operation-button-two-light: #78da85;
+$modal-operation-button-two-light-hover: #6eca7a;
+
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+.disable-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.modal {
+    z-index: 1000;
+    font-family: $font-stack;
+    width: 520px;
+    height: auto;
+    position: fixed;
+    padding: 1.8em 1.6em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    
+
+
+    .modal-header {
+        @include flex(row);
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: .4px;
+            line-height: 1.2;
+        }
+    }
+
+    button {
+        border: transparent;
+        outline: transparent;
+        background-color: transparent;
+        align-self: flex-start;
+        
+        .close-btn {
+            font-size: 2em;
+            cursor: pointer;
+            position: relative;
+            transform: translateX(-100%);
+            left: 100%;
+            color: rgb(238, 238, 238);
+        }
+    }
+
+    .modal-content {
+        margin: 1.6em 0;
+        padding-right: 1.3em;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;   
+    }
+
+    .operation-buttons {
+        @include flex(row);
+        gap: .8em;
+    }
+
+
+}
+
+.modal-overlay {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+
+#operation-button {
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.8em 1.2em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.dark-mode {
+        background-color: $modal-background-dark;
+        h2 {
+            color: $modal-title-color-dark;
+        }
+    .modal-content {
+        color: $modal-content-color-dark;
+    }
+
+    #operation-button {
+
+        // DARK MODE BUTTONS
+
+        &:nth-child(1) {
+            a {
+                color: $modal-operation-button-one-color-text-dark;
+            }
+            background-color: $modal-operation-button-one-dark;
+            &:hover {
+                background-color: $modal-operation-button-one-dark-hover;
+            }
+        }
+        &:nth-child(2) {
+            a {
+                color: $modal-operation-button-two-color-text-dark;
+            }
+            background-color: $modal-operation-button-two-dark;
+            &:hover {
+                background-color: $modal-operation-button-two-dark-hover;
+            }
+        }
+    }
+}
+
+
+.light-mode {
+
+            button {
+                .close-btn {
+                    color: #061f3b;
+                }
+            }
+
+        background-color: $modal-background-light;
+        h2 {
+            color: $modal-title-color-light;
+        }
+    .modal-content {
+        color: $modal-content-color-light;
+    }
+
+    #operation-button {
+
+        // LIGHTS MODE BUTTONS
+
+        &:nth-child(1) {
+            a {
+                color: $modal-operation-button-one-color-text-light;
+            }
+            background-color: $modal-operation-button-one-light;
+            &:hover {
+                background-color: $modal-operation-button-one-light-hover;
+            }
+        }
+        &:nth-child(2) {
+            a {
+                color: $modal-operation-button-two-color-text-light;
+            }
+            background-color: $modal-operation-button-two-light;
+            &:hover {
+                background-color: $modal-operation-button-two-light-hover;
+            }
+        }
+    }
+}
+
