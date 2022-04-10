@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800;900&display=swap");
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,13 +7,297 @@
 }
 
 body {
-  background-color: #11181d;
+  font-family: "Epilogue", "sans-serif";
 }
 
-.box {
-  background-color: #03b803;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 2em;
+#activeSection {
+  color: white;
+}
+
+.cursor {
+  width: 2px;
+  height: 140%;
+  background-color: black;
+  margin-left: 5px;
+  -webkit-animation: cursor .75s infinite alternate;
+          animation: cursor .75s infinite alternate;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  border: transparent;
+  outline: transparent;
+  padding: 23px;
+  cursor: pointer;
+}
+
+.demo-modal {
+  border-radius: 50px;
+  background-color: #8916ED;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+}
+
+.demo-modal:hover {
+  background-color: #7e18d8;
+}
+
+.landing-page {
+  background-image: url("./pattern.png");
+  padding: 0 150px;
+  background-color: #08000A;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.landing-page nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.landing-page nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5em;
+}
+
+.landing-page nav ul li {
+  list-style-type: none;
+}
+
+.landing-page nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.landing-page .main-info {
+  padding: 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .6em;
+  height: calc(100% - 80px);
+}
+
+.landing-page .main-info .main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5em;
+}
+
+.landing-page .main-info .main-text h1 {
+  font-size: 4em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.landing-page .main-info .main-text p {
+  line-height: 1.2;
+  margin-top: .8em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.25em;
+}
+
+.landing-page .main-info button {
+  margin-top: 2em;
+}
+
+.landing-page .main-info .code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: .8em 1.2em;
+  font-size: 1.75em;
+  color: #08000A;
+  justify-self: flex-end;
+  margin-top: 5em;
+}
+
+.landing-page .main-info .code h6 {
+  font-weight: 500;
+}
+
+.instalation {
+  height: 100vh;
+  width: 100%;
+  background-color: #8916ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.instalation .install-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2.5em;
+}
+
+.instalation .install-info h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 6em;
+}
+
+.instalation .install-info p {
+  color: #E0AAFF;
+  font-family: 500;
+  font-size: 1.75em;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.instalation .install {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1em;
+}
+
+.instalation .install .install-command {
+  padding: 23px;
+  background-color: #280A44;
+  color: #E0AAFF;
+}
+
+.instalation .install button {
+  outline: transparent;
+  border: transparent;
+  background-color: #280A44;
+  padding: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.instalation .install button span {
+  line-height: 0;
+  text-align: center;
+  font-size: 1.75em;
+  color: #E0AAFF;
+}
+
+.usage {
+  padding: 170px 150px;
+  height: auto;
+  width: 100%;
+  background-color: #0E0725;
+}
+
+.usage .usage-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.usage .usage-info h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 3.5em;
+}
+
+.usage .usage-info p {
+  color: rgba(255, 255, 255, 0.35);
+  text-align: left;
+  font-size: 1.5em;
 }
 /*# sourceMappingURL=style.css.map */

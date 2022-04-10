@@ -5,6 +5,7 @@ Modal Library is a simple javascript library whose goal is making good looking m
 
 ## Goals
 
+- Make documentation website
 - Practice OOP Programing
 - Practice using git and npm
 - Practice SCSS
@@ -13,7 +14,7 @@ Modal Library is a simple javascript library whose goal is making good looking m
 
 ## Instalation
 
-Soon...
+npm install easy-modal-js --save
 
 ## Sources 
 

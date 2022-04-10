@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800;900&display=swap');
+
+$font-stack: 'Epilogue', 'sans-serif';
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +9,205 @@
 }
 
 body {
-    background-color: #11181d;   
+    font-family: $font-stack;
 }
 
-.box {
-    background-color: rgb(3, 184, 3);
-    width: 200px;
-    height: 200px;
-    margin-bottom: 2em;
+#activeSection {
+    color: white;
+}
+
+.cursor {
+    width: 2px;
+    height: 140%;
+    background-color: black;
+    margin-left: 5px;
+    animation: cursor .75s infinite alternate;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn {
+    border: transparent;
+    outline: transparent;
+    padding: 23px;
+    cursor: pointer;
+}
+
+.demo-modal {
+    border-radius: 50px;
+    background-color: #8916ED;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+
+.demo-modal:hover {
+    background-color: #7e18d8;
+}
+
+.landing-page {
+    background-image: url('./pattern.png');
+    padding: 0 150px;
+    background-color: #08000A;
+    height: 100vh;
+    width: 100%;
+    color: white;
+
+    nav {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            gap: 2.5em;
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 0.4);
+                }
+            }
+        }
+    }
+
+    .main-info {
+        padding: 3em 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: .6em;
+        height: calc(100% - 80px);
+        .main-text {
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+            h1 {
+                font-size: 4em;
+                text-align: center;
+                font-weight: 700;
+            }
+            p {
+                line-height: 1.2;
+                margin-top: .8em;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 1.25em;
+            }
+        }
+
+        button {
+            margin-top: 2em;
+        }
+
+
+
+            .code {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: white;
+                padding: .8em 1.2em;
+                font-size: 1.75em;
+                color: #08000A;
+                justify-self: flex-end;
+                margin-top: 5em;
+                h6 {
+                    font-weight: 500;
+                }
+            }
+    }
+}
+
+.instalation {
+    height: 100vh;
+    width: 100%;
+    background-color: #8916ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .install-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1em;
+        margin-bottom: 2.5em;
+        h1 {
+            color: white;
+            font-weight: 700;
+            font-size: 6em;
+        }
+        p {
+            color: #E0AAFF;
+            font-family: 500;
+            font-size: 1.75em;
+            text-align: center;
+            line-height: 1.2;
+        }
+    }
+    
+    .install {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1em;
+        .install-command {
+            padding: 23px;
+            background-color: #280A44;
+            color: #E0AAFF;
+        }
+        button {
+            outline: transparent;
+            border: transparent;
+            background-color: #280A44;
+            padding: 23px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            span {
+                line-height: 0;
+                text-align: center;
+                font-size: 1.75em;
+                color: #E0AAFF;
+            }
+        }
+    }
+}
+
+.usage {
+    padding: 170px 150px;
+    height: auto;
+    width: 100%;
+    background-color: #0E0725;
+
+    .usage-info {
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+        flex-direction: column;
+        h1 {
+            color: white;
+            font-weight: 600;
+            font-size: 3.5em;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.35);
+            text-align: left;
+            font-size: 1.5em;
+        }
+    }
 }
