@@ -269,6 +269,20 @@ body {
 }
 
 .usage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3em;
   padding: 170px 150px;
   height: auto;
   width: 100%;
@@ -282,7 +296,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 3em;
+  gap: 1.5em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -299,5 +313,73 @@ body {
   color: rgba(255, 255, 255, 0.35);
   text-align: left;
   font-size: 1.5em;
+}
+
+.usage .usage-config {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.usage .usage-config .info {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.usage .usage-config .info h2 {
+  margin-top: 2em;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
+
+.usage .usage-config h3 {
+  color: white;
+  font-size: 2.25em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.usage .usage-config code {
+  font-family: "Epilogue", "sans-serif";
+  padding: .8em 1.2em;
+  background-color: #280A44;
+  font-size: 1.25em;
+  color: #E0AAFF;
+  font-weight: 500;
+  margin-left: 1em;
+}
+
+.usage .usage-config .demo-modal-usage {
+  margin-top: 2em;
+  border-radius: 2px;
+  background-color: #8916ED;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+  padding: 20px;
+  margin-left: 1em;
+}
+
+.usage .usage-config .demo-modal-usage:hover {
+  background-color: #7616ca;
 }
 /*# sourceMappingURL=style.css.map */
