@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Epilogue", "sans-serif";
 }
@@ -245,6 +249,7 @@ body {
 }
 
 .instalation .install button {
+  position: relative;
   outline: transparent;
   border: transparent;
   background-color: #280A44;
@@ -259,6 +264,18 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  cursor: pointer;
+}
+
+.instalation .install button .tooltipText {
+  display: none;
+  width: 150px;
+  position: absolute;
+  border-radius: 2px;
+  top: -50%;
+  padding: 1em;
+  font-size: .9em;
+  background-color: #0E0725;
 }
 
 .instalation .install button span {

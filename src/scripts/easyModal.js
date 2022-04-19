@@ -1,7 +1,7 @@
 const DEFAULT_OPTIONS = {
 	title: "Title...",
 	theme: "dark",
-	description: "Description/main content",
+	description: "",
 	modal: "modal",
 	closeBtn: true,
 	operationButton: [],

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal Library</title>
-    <!-- <script src="./src/scripts/App.js" defer type="module"></script> -->
+    <script src="./src/scripts/App.js" defer type="module"></script>
     <link rel="stylesheet" href="./src/styles/modal.css">
     <link rel="stylesheet" href="./src/styles/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -25,6 +25,7 @@
             </ul>
         </nav>
 
+
         <div class="main-info">
             <div class="main-text">
                 <h1>Simplify your modal.</h1>
@@ -32,7 +33,7 @@
                 <p>Don't spend a lot of time creating good looking modal. <br> easyModal let you make modal in one line of code.</p>
             </div>
             
-            <button class="demo-modal btn">Demo modal</button>
+            <button class="demo-modal btn" id="demo-modal-main">Demo modal</button>
             <div class="code">
                 <h6>new EasyModal({title: 'France', description: 'The capital city of France is Paris.', theme: 'dark'});</h6>
                 <div class="cursor"></div>
@@ -47,9 +48,10 @@
         </div>
     
         <div class="install">
-            <span class="install-command">npm install easy-modal-js --save</span>
-            <button class="">
+            <span class="install-command" id="toCopy">npm install easy-modal-js --save</span>
+            <button class="" id="copy-install-btn">
                 <span class="material-icons-outlined">content_copy</span>
+                <span class="tooltipText">Copied to clipboard!</span>
             </button>
         </div>
 
@@ -64,14 +66,14 @@
             <div class="info">
                 <h3>Here's a line of code representing a simple information modal:</h3>
                 <code>new EasyModal({title: 'France', description: 'The capital city of France is Paris.', theme: 'dark'});</code>
-                <button class="demo-modal-usage btn">Demo modal</button>
+                <button class="demo-modal-usage btn" id="demo-modal-usage-first">Demo modal</button>
             </div>
             <div class="info">
                 <h3>Here’s a line of code representing a simple information modal with functional button:</h3>
                 <code>
                     new EasyModal({title: 'France', operationButton: [{content: 'Buy Flight', href: 'https://www.farecompare.com/}]});
                 </code>
-                <button class="demo-modal-usage btn">Demo modal</button>
+                <button class="demo-modal-usage btn" id="demo-modal-usage-second">Demo modal</button>
             </div>
             <div class="info">
                 <h2>Don't forget to import google icon library for working modal properly!</h3>
