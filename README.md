@@ -32,19 +32,19 @@ ps. You can change things in SCSS file like colors or other properties.
 
 - To create our first modal we have to import script.
 
-```
+```javascript
 import { EasyModal } from "yourPath/easyModal.js";
 ```
 
 - Everything done! We can start making modals!
 
-```
+```javascript
 new EasyModal({title: 'My first modal!', description: 'It's my first modal using easy-modal-js library!', theme: 'dark'});
 ```
 
 - Also u can add buttons with 'href'!
 
-```
+```javascript
 new EasyModal({title: 'Link to my github!', operationButton: [{content: 'My github!', href: 'https://github.com/'}]});
 ```
 
