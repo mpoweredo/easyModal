@@ -42,11 +42,16 @@ import { EasyModal } from "yourPath/easyModal.js";
 new EasyModal({title: 'My first modal!', description: "It's my first modal using easy-modal-js library!", theme: 'dark'});
 ```
 
+![PHOTO!](./readme%20photos/photo1.png)
+
 - Also u can add buttons with 'href'!
 
 ```javascript
 new EasyModal({title: 'Link to my github!', operationButton: [{content: 'My github!', href: 'https://github.com/'}]});
 ```
+
+![PHOTO!](./readme%20photos/photo2.png)
+
 
 ps2. You can change theme changing 'theme property'!
 
