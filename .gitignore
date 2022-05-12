@@ -1,0 +1,4 @@
+node_modules/
+lib/
+readme photos/
+*.json
