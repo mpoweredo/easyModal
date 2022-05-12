@@ -24,7 +24,7 @@ npm install easy-modal-js --save
 
 - First You have to import Google Icons library for working icons properly!
 
-```
+```html
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 ```
 
