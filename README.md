@@ -39,7 +39,7 @@ import { EasyModal } from "yourPath/easyModal.js";
 - Everything done! We can start making modals!
 
 ```javascript
-new EasyModal({title: 'My first modal!', description: "It's my first modal using easy-modal-js library!", theme: 'dark'});
+new EasyModal({title: 'France', description: "The capital city of France is Paris.", theme: 'dark'});
 ```
 
 ![PHOTO!](./readme%20photos/photo1.png)
@@ -47,7 +47,7 @@ new EasyModal({title: 'My first modal!', description: "It's my first modal using
 - Also u can add buttons with 'href'!
 
 ```javascript
-new EasyModal({title: 'Link to my github!', operationButton: [{content: 'My github!', href: 'https://github.com/'}]});
+new EasyModal({title: 'France', operationButton: [{content: 'Buy flight', href: 'https://github.com/'}]});
 ```
 
 ![PHOTO!](./readme%20photos/photo2.png)
